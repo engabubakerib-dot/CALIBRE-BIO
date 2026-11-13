@@ -1,0 +1,6 @@
+// Template for a gold-claim file. One JSON object per line; `//` lines are ignored.
+// Fill `entities` with exactly what the model asserted, never a corrected version.
+// `gold_label` is assigned by an annotator against the pinned DB release named in `notes`.
+// See docs/claim_taxonomy.md for the field definitions and the label decision rules.
+{"claim_id": "PILOT-AMR-001-handwritten-00", "domain": "amr", "claim_type": "gene_drug_class", "text": "<the claim exactly as asserted>", "entities": {"gene": "", "organism": null, "drug_class": null, "mechanism": null, "pmids": [], "dois": []}, "gold_label": null, "hallucination_class": null, "difficulty": "easy", "source": "handwritten:<annotator-initials>", "label_status": "unlabelled", "notes": "evidence consulted: CARD <release>; "}
+{"claim_id": "PILOT-MOL-001-handwritten-00", "domain": "molecular", "claim_type": "structure_validity", "text": "<the claim exactly as asserted>", "entities": {"name": null, "smiles": "", "formula": null, "mw": null, "pmids": [], "dois": []}, "gold_label": null, "hallucination_class": null, "difficulty": "easy", "source": "handwritten:<annotator-initials>", "label_status": "unlabelled", "notes": ""}

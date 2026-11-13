@@ -1,0 +1,67 @@
+# Pinned model snapshots. Use dated snapshot IDs only — never floating aliases
+# such as "gpt-4o" or "deepseek-chat", which silently change underneath you.
+# `status` must read "verified YYYY-MM-DD" (a successful test call) before pre-registration.
+#
+# IMPORTANT (checked 2026-11-08): Claude 3.5 Sonnet (claude-3-5-sonnet-20240620 / -20241022)
+# was retired from the Anthropic API on 2025-10-28 and can no longer be called.
+# The Anthropic slot below therefore uses a current model; pick the final one before
+# registering, and run all generation early (outputs are cached, so later retirement
+# does not invalidate results).
+
+[models.openai]
+provider = "openai_compatible"
+base_url = "https://api.openai.com/v1"
+api_key_env = "OPENAI_API_KEY"
+snapshot = "gpt-4o-2024-11-20"
+family = "openai"
+status = "UNVERIFIED"
+
+[models.anthropic]
+provider = "anthropic"
+base_url = "https://api.anthropic.com/v1"
+api_key_env = "ANTHROPIC_API_KEY"
+snapshot = "claude-sonnet-5-5"   # earliest retirement not before 2027-09-28 (Anthropic deprecations page)
+family = "anthropic"
+status = "UNVERIFIED"
+
+[models.deepseek]
+provider = "openai_compatible"
+base_url = "https://api.deepseek.com/v1"
+api_key_env = "DEEPSEEK_API_KEY"
+# "deepseek-chat" is an alias that DeepSeek re-points to newer versions. For a pinned
+# V3, prefer the open weights (deepseek-ai/DeepSeek-V3-0324 at a fixed HF revision)
+# served by a provider or vLLM, and record the revision hash here.
+snapshot = "deepseek-chat"
+family = "deepseek"
+status = "UNPINNED-ALIAS"
+
+[models.xai]
+provider = "openai_compatible"
+base_url = "https://api.x.ai/v1"
+api_key_env = "XAI_API_KEY"
+snapshot = "grok-3"
+family = "xai"
+status = "UNVERIFIED"
+
+[models.llama8b]
+provider = "openai_compatible"      # vLLM: `vllm serve meta-llama/Llama-3.1-8B-Instruct --revision <hash>`
+base_url = "http://localhost:8000/v1"
+api_key_env = "VLLM_API_KEY"        # any string; vLLM ignores it unless --api-key is set
+snapshot = "meta-llama/Llama-3.1-8B-Instruct"
+hf_revision = "FILL-ME"
+family = "meta"
+status = "UNVERIFIED"
+
+[models.qwen7b]
+provider = "openai_compatible"
+base_url = "http://localhost:8001/v1"
+api_key_env = "VLLM_API_KEY"
+snapshot = "Qwen/Qwen2.5-7B-Instruct"
+hf_revision = "FILL-ME"
+family = "qwen"
+status = "UNVERIFIED"
+
+[generation]
+temperature = 0.0          # raw condition; self-consistency / semantic entropy use k samples at T=1.0
+max_tokens = 1024
+seed = 20261108

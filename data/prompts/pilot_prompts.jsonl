@@ -1,0 +1,9 @@
+// Fixed prompt set for the pilot. One JSON object per line; `//` lines are ignored.
+// Keep this file append-only once pre-registered: prompt_id is the unit the bootstrap
+// resamples and the unit the calibration/test split is made on.
+// Fields: prompt_id, domain, claim_type (the type the prompt is designed to elicit), prompt.
+{"prompt_id": "AMR-EXIST-01", "domain": "amr", "claim_type": "gene_existence", "prompt": "List the beta-lactamase genes most frequently reported in carbapenem-resistant Klebsiella pneumoniae isolates, with a PubMed ID for each."}
+{"prompt_id": "AMR-MECH-01", "domain": "amr", "claim_type": "gene_mechanism", "prompt": "For each gene you list, state the resistance mechanism by which it acts."}
+{"prompt_id": "AMR-CLASS-01", "domain": "amr", "claim_type": "gene_drug_class", "prompt": "Which antibiotic classes are affected by the resistance genes commonly found on IncF plasmids in Enterobacterales?"}
+{"prompt_id": "MOL-VALID-01", "domain": "molecular", "claim_type": "structure_validity", "prompt": "Propose five small-molecule scaffolds suitable for a fragment-based campaign. Give the SMILES, molecular formula and molecular weight of each."}
+{"prompt_id": "MOL-IDENT-01", "domain": "molecular", "claim_type": "structure_identity", "prompt": "Give the SMILES string, molecular formula and molecular weight of each of the following approved drugs: aspirin, caffeine, metformin, ciprofloxacin, colistin."}

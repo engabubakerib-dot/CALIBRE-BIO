@@ -1,0 +1,22 @@
+# Pinned evidence sources. Record the exact release BEFORE running any reported
+# experiment, and copy the downloaded file's checksum into data/evidence_versions/.
+
+[card]
+# Download card-data.tar.bz2 from https://card.mcmaster.ca/download, extract aro_index.tsv here.
+aro_index = "data/reference/card/aro_index.tsv"
+release = "FILL-ME (e.g. CARD data version x.y.z, download date)"
+
+[card_seed]
+# Hand-made 15-gene subset used only for unit tests and the first pilot claims.
+aro_index = "data/reference/amr_seed_index.tsv"
+release = "seed-2026-11-08"
+
+[resfinder]
+release = "FILL-ME"
+
+[ncbi]
+# Set NCBI_API_KEY in the environment for 10 req/s instead of 3 req/s.
+note = "Entrez E-utilities, accessed live; access date logged per call"
+
+[uniprot]
+release = "FILL-ME (UniProtKB release, e.g. 2026_0x)"

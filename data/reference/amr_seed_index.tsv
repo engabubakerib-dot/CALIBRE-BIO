@@ -1,0 +1,16 @@
+ARO Accession	CVTERM ID	Model Sequence ID	Model ID	Model Name	ARO Name	Protein Accession	DNA Accession	AMR Gene Family	Drug Class	Resistance Mechanism	CARD Short Name	Aliases
+SEED-01				KPC-2	KPC-2			KPC beta-lactamase	carbapenem; cephalosporin; monobactam; penam	antibiotic inactivation	KPC-2	blaKPC-2
+SEED-02				NDM-1	NDM-1			NDM beta-lactamase	carbapenem; cephalosporin; cephamycin; penam	antibiotic inactivation	NDM-1	blaNDM-1
+SEED-03				OXA-48	OXA-48			OXA-48-like beta-lactamase	carbapenem; cephalosporin; penam	antibiotic inactivation	OXA-48	blaOXA-48
+SEED-04				CTX-M-15	CTX-M-15			CTX-M beta-lactamase	cephalosporin; monobactam; penam	antibiotic inactivation	CTX-M-15	blaCTX-M-15
+SEED-05				MCR-1	MCR-1			MCR phosphoethanolamine transferase	peptide antibiotic	antibiotic target alteration	MCR-1	mcr-1
+SEED-06				vanA	vanA			glycopeptide resistance gene cluster	glycopeptide antibiotic	antibiotic target alteration	vanA
+SEED-07				mecA	mecA			methicillin resistant PBP2	penam; cephalosporin; carbapenem	antibiotic target replacement	mecA
+SEED-08				tet(M)	tet(M)			tetracycline-resistant ribosomal protection protein	tetracycline antibiotic	antibiotic target protection	tet(M)	tetM
+SEED-09				ErmB	ErmB			Erm 23S ribosomal RNA methyltransferase	macrolide antibiotic; lincosamide antibiotic; streptogramin antibiotic	antibiotic target alteration	ErmB	erm(B)
+SEED-10				qnrS1	qnrS1			quinolone resistance protein (qnr)	fluoroquinolone antibiotic	antibiotic target protection	qnrS1
+SEED-11				AAC(6')-Ib-cr	AAC(6')-Ib-cr			AAC(6')	fluoroquinolone antibiotic; aminoglycoside antibiotic	antibiotic inactivation	AAC(6')-Ib-cr	aac(6')-Ib-cr
+SEED-12				sul1	sul1			sulfonamide resistant sul	sulfonamide antibiotic	antibiotic target replacement	sul1
+SEED-13				armA	armA			16S rRNA methyltransferase (G1405)	aminoglycoside antibiotic	antibiotic target alteration	armA
+SEED-14				FosA	FosA			fosfomycin thiol transferase	phosphonic acid antibiotic	antibiotic inactivation	FosA	fosA
+SEED-15				tet(A)	tet(A)			major facilitator superfamily (MFS) antibiotic efflux pump	tetracycline antibiotic	antibiotic efflux	tet(A)	tetA

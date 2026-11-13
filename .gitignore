@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# secrets
+.env
+
+# caches and raw outputs: large, regenerable, and not citable
+.cache/
+data/reference/card/
+data/generated/
+experiments/results/
+experiments/logs/*.jsonl
+!experiments/logs/.gitkeep
+
+# keep the pinned release manifests, not the downloaded databases
+data/evidence_versions/*.tar*
+data/evidence_versions/*.zip
